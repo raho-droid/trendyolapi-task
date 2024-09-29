@@ -12,7 +12,7 @@
     <h1>Trendyol Ürünlerini Çek</h1>
     <button id="save-products-btn">Ürünleri Çek</button>
     <h1>Trendyol Ürün Listesi</h1>
-    <input type="text" id="search-input" placeholder="Ürün adı, marka veya cinsiyet ara">
+    <input type="text" id="search-input" placeholder="Ürün ara">
     <button id="search-btn">Ara</button>
 
     <table id="products-table" style="width:100%; margin-top: 20px;">
