@@ -5,6 +5,9 @@ Sorry for that.
 Please run the following commands after cloning the repository.
 (Don't forget to customize the env file.)
 
+// for dependencies
+composer install
+
 // to create database
 php artisan migrate
 
