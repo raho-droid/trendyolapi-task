@@ -11,10 +11,10 @@ class ProductController extends Controller
 {
     public function saveProducts()
     {
-        $supplierId = 732323; 
-        $apiKey = 'm5Yw7mrhl6gzGqnRdUNm';
-        $apiSecret = 'pmdibpKG2BKsKQjJ0AQe';
-        $size = 100; // Sayfa başına çekilecek ürün sayısını artırdım
+        $supplierId = env('SUPPLIER_ID');
+        $apiKey = env('API_KEY');
+        $apiSecret = env('API_SECRET');
+        $size = 100; 
         $url = "https://api.trendyol.com/sapigw/suppliers/{$supplierId}/products?approved=true&page=0&size={$size}"; 
         
         try {
