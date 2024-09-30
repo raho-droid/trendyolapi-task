@@ -61,7 +61,7 @@ class ProductController extends Controller
         // Arama işlemi
         if ($search) {
             $query->where(function ($q) use ($search) {
-                $q->where('product_name', 'LIKE', '%' . $search . '%')
+                $q->where('title', 'LIKE', '%' . $search . '%')
                   ->orWhere('brand', 'LIKE', '%' . $search . '%')
                   ->orWhere('gender', 'LIKE', '%' . $search . '%');
             });
